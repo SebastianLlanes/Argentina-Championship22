@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%; 
+}
+.section-bienvenida {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.bandera-argentina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+.section-bienvenida img {
+    width: 100%;
+    max-height: fit-content;
+}
+.btn-sol {
+    position: absolute;
+    width: 18%;
+    border: none;
+    background: none;
+    transition: all 1s;
+      -webkit-transition: all 1s;
+}
+.btn-sol:hover {
+    transform:rotate(360deg) scale(0.4,0.4);
+        -webkit-transform:rotate(360deg) scale(1.4,1.4);
+        -o-transform:rotate(360deg) scale(0.4,0.4);
+}
+/* .inactive {
+    display: none;
+} */
