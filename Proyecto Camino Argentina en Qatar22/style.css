@@ -36,6 +36,9 @@ html {
         -webkit-transform:rotate(360deg) scale(1.4,1.4);
         -o-transform:rotate(360deg) scale(0.4,0.4);
 }
-/* .inactive {
+.section-segunda_jugadores div img {
+    width: 30%;
+}
+.inactive {
     display: none;
-} */
+}
