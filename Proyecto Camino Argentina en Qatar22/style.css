@@ -1,3 +1,8 @@
+/* 
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Rock Salt', cursive;
+    font-family: 'Rubik 80s Fade', cursive; */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,8 +41,41 @@ html {
         -webkit-transform:rotate(360deg) scale(1.4,1.4);
         -o-transform:rotate(360deg) scale(0.4,0.4);
 }
-.section-segunda_jugadores div img {
-    width: 30%;
+.div-momentos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    background-color: #0e9ef5;
+    background-image: linear-gradient(0deg, #0e9ef5 0%, #a6eefb 33%, #ffffff 100%);
+
+}
+.div-span_momentos {
+    margin-left: 85px;
+    margin-bottom: 50px;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.div-span_momentos img {
+    width: 100%;
+    height: 250px;
+}
+.div-span_momentos h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+.span-especial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.span-especial img {
+    width: 50%;
+    height: 100%;
 }
 .inactive {
     display: none;
