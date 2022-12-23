@@ -89,7 +89,9 @@ html {
     border: 2px solid #f8f8f8;
     background-color: #0e9ef5;
     color: #f8f8f8;
-   
+    transform: scale(1, 1);
+    -webkit-transform:scale(1.2,1.2);
+        -o-transform:scale(0.2,0.2); 
 }
 .section-capitulos {
     width: 100%;
@@ -111,6 +113,24 @@ html {
 }
 .div-capitulos p {
     padding: 5px 0;
+}
+.section-imagenes {
+    display: flex;
+    flex-direction: column;
+}
+.div-imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.div-imagenes img {
+    width: 300px;
+}
+/* .div-imagenes span {
+  
+} */
+.imagen-partidos {
+    width: 100px;
 }
 .inactive {
     display: none;
