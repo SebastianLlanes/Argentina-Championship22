@@ -16,7 +16,9 @@ const btnHolanda = document.querySelector('.hablar-hacer')
 const btnCroacia = document.querySelector('.creer')
 const btnFrancia = document.querySelector('.epicidad')
 
-//Selecciono capitulos
+const botonesCapitulos = [btnArabia, btnMexico, btnPolonia, btnAustralia, btnHolanda, btnCroacia, btnFrancia]
+
+//Selecciono parrafos
 const capArabia = document.querySelector('.arabia')
 const capMexico = document.querySelector('.mexico')
 const capPolonia = document.querySelector('.polonia')
@@ -24,6 +26,8 @@ const capAustralia = document.querySelector('.australia')
 const capHolanda = document.querySelector('.holanda')
 const capCroacia = document.querySelector('.croacia')
 const capFrancia = document.querySelector('.francia')
+
+const parrafosCapitulos = [capArabia, capMexico, capPolonia, capAustralia, capHolanda, capCroacia, capFrancia]
 
 //Selecciono imagenes
 const imgArabia = document.querySelector('.arabia-img')
@@ -34,6 +38,8 @@ const imgHolanda = document.querySelector('.holanda-img')
 const imgCroacia = document.querySelector('.croacia-img')
 const imgFrancia = document.querySelector('.francia-img')
 
+const imagenesParrafo = [imgArabia, imgMexico, imgPolonia, imgAustralia, imgHolanda, imgCroacia, imgFrancia]
+
 //Event Listener para boton Sol
  btnSol.addEventListener('click', () => {
  document.getElementById('section-hide').style.display = 'none';
@@ -43,62 +49,79 @@ const imgFrancia = document.querySelector('.francia-img')
 
 //  imagenes.classList.remove('inactive')
     })
+// Desarrollo de funcion pata iterar capitulos, imagenes y parrafos
+for (let i = 0; i < botonesCapitulos.length; i++) {
+   const capitulosBoton = botonesCapitulos[i];
+
+botonesCapitulos[i].addEventListener('click', ()=> {
+   
+      capitulos.classList.remove('inactive');
+      parrafosCapitulos[i].classList.toggle('inactive');
+
+      imagenes.classList.remove('inactive');
+      imagenesParrafo[i].classList.toggle('inactive');
+
+ })
+ 
+}
+
+
 //Event Listener para abrir capitulos desde las imagenes
-    btnArabia.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capArabia.classList.toggle('inactive');
+   //  btnArabia.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capArabia.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgArabia.classList.toggle('inactive');
-    })
-    btnMexico.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capMexico.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgArabia.classList.toggle('inactive');
+   //  })
+   //  btnMexico.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capMexico.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgMexico.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgMexico.classList.toggle('inactive');
       
-    })
-    btnPolonia.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capPolonia.classList.toggle('inactive');
+   //  })
+   //  btnPolonia.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capPolonia.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgPolonia.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgPolonia.classList.toggle('inactive');
       
-    })
-    btnAustralia.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capAustralia.classList.toggle('inactive');
+   //  })
+   //  btnAustralia.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capAustralia.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgAustralia.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgAustralia.classList.toggle('inactive');
       
-    })
-    btnHolanda.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capHolanda.classList.toggle('inactive');
+   //  })
+   //  btnHolanda.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capHolanda.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgHolanda.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgHolanda.classList.toggle('inactive');
       
-    })
-    btnCroacia.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capCroacia.classList.toggle('inactive');
+   //  })
+   //  btnCroacia.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capCroacia.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgCroacia.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgCroacia.classList.toggle('inactive');
       
-    })
-    btnFrancia.addEventListener('click', ()=> {
-      capitulos.classList.remove('inactive');
-      capFrancia.classList.toggle('inactive');
+   //  })
+   //  btnFrancia.addEventListener('click', ()=> {
+   //    capitulos.classList.remove('inactive');
+   //    capFrancia.classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive')
-      imgFrancia.classList.toggle('inactive');
+   //    imagenes.classList.remove('inactive')
+   //    imgFrancia.classList.toggle('inactive');
       
-    })
+   //  })
  
    
  

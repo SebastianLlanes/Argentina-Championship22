@@ -46,10 +46,20 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 60px;
     background-color: #0e9ef5;
     background-image: linear-gradient(0deg, #0e9ef5 0%, #a6eefb 50%, #ffffff 100%);
 
+}
+.header {
+        display: flex;
+        font-family: 'Rubik 80s Fade', cursive;
+        font-size: 4.5rem;
+        flex-direction: column;
+        align-items: center;
+        background-color: #a6eefb;
+        font-weight: bolder;
+        padding-top: 10px;
 }
 .div-span_momentos {
     border: 2px solid #0e9ef5;
@@ -69,6 +79,7 @@ html {
     font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
     margin-top: 10px;
+
 }
 .span-especial {
     width: 50%;
@@ -101,10 +112,10 @@ html {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: auto;
     border: 1px solid #0e9ef5;
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .div-capitulos h2 {
     border-bottom: 1px solid #0e9ef5;
@@ -112,19 +123,21 @@ html {
     margin: 5px;
 }
 .div-capitulos p {
-    padding: 5px 0;
+    padding: 5px 40px;
 }
 .section-imagenes {
     display: flex;
     flex-direction: column;
 }
 .div-imagenes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 10px 10px;
 }
 .div-imagenes img {
-    width: 300px;
+    width: 370px;
+    margin: 20px;
 }
 /* .div-imagenes span {
   
