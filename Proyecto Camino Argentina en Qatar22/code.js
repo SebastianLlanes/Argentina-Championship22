@@ -40,6 +40,11 @@ const imgFrancia = document.querySelector('.francia-img')
 
 const imagenesParrafo = [imgArabia, imgMexico, imgPolonia, imgAustralia, imgHolanda, imgCroacia, imgFrancia]
 
+//Selecciono botones de Capitulos
+const btnVolverCapitulo = document.querySelector('.button-anteriorCapitulo')
+const btnVolverCapitulos = document.querySelector('.button-volverCapitulos')
+const btnProximoCapitulo = document.querySelector('.button-proximoCapitulo')
+
 //Event Listener para boton Sol
  btnSol.addEventListener('click', () => {
  document.getElementById('section-hide').style.display = 'none';
@@ -58,13 +63,36 @@ botonesCapitulos[i].addEventListener('click', ()=> {
       capitulos.classList.remove('inactive');
       parrafosCapitulos[i].classList.toggle('inactive');
 
-      imagenes.classList.remove('inactive');
+      // imagenes.classList.remove('inactive');
       imagenesParrafo[i].classList.toggle('inactive');
 
- })
- 
-}
+})
 
+
+//Función de botones de Capítulos
+btnVolverCapitulo.addEventListener('click', ()=> {
+
+})
+
+btnVolverCapitulos.addEventListener('click', ()=> {
+ 
+   parrafosCapitulos[i].classList.add('inactive');
+   imagenesParrafo[i].classList.add('inactive');
+})
+;
+btnProximoCapitulo.addEventListener('click', ()=> {
+
+})
+
+
+
+//   function toggleCapitulos() {
+//       const isCapitulo = parrafosCapitulos[i].classList.contains('inactive');
+//      if (isCapitulo[i] != parrafosCapitulos[i]) {
+//        parrafosCapitulos[i].classList.add('inactive')
+//        parrafosCapitulos[i].classList.toggle('inactive')
+//    }
+//  }
 
 //Event Listener para abrir capitulos desde las imagenes
    //  btnArabia.addEventListener('click', ()=> {
@@ -124,4 +152,4 @@ botonesCapitulos[i].addEventListener('click', ()=> {
    //  })
  
    
- 
+}
