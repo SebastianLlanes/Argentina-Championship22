@@ -77,8 +77,10 @@ html {
 .div-span_momentos h2 {
     border-top: 1px #0e9ef5 solid;
     font-family: 'Libre Baskerville', serif;
+    color: #a6eefb;
     font-size: 2rem;
     margin-top: 10px;
+    
 
 }
 .span-especial {
@@ -101,8 +103,12 @@ html {
     background-color: #0e9ef5;
     color: #f8f8f8;
     transform: scale(1, 1);
-    -webkit-transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.1,1.1);
         -o-transform:scale(0.2,0.2); 
+
+}
+.div-span_momentos:hover h2 {
+    border-top: 1px #ffffff solid;
 }
 .section-capitulos {
     width: 100%;
@@ -119,12 +125,14 @@ html {
     font-size: 1.6rem;
 }
 .div-capitulos h2 {
-    border-bottom: 1px solid #0e9ef5;
-    padding: 0px 20px;
+    border-top: 1px solid #ffffff;
+    padding: 8px 20px;
     margin: 5px;
+    color: #a6eefb;
 }
 .div-capitulos p {
     padding: 5px 40px;
+    color: #ffffff;
 }
 .section-imagenes {
     display: flex;
@@ -171,7 +179,7 @@ html {
     background-color: #0e9ef5;
 }
 .botones-galeria button:hover {
-    color: var(--gold);
+    color: #ffffff;
     box-shadow: 0 0 15px  #0300c2;
     text-shadow: 0 0 15px  #0300c2;
 
